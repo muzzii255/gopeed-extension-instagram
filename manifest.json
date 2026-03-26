@@ -4,7 +4,7 @@
   "title": "Instagram Downloader",
   "description": "Download Instagram reels.",
   "icon": "./icons/instagram.png",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "homepage": "https://github.com/muzzii255/gopeed-extension-instagram",
   "repository": {
     "url": "https://github.com/muzzii255/gopeed-extension-instagram"
@@ -25,7 +25,11 @@
       "description": "Select proxy protocol (none, http, or socks5)",
       "type": "string",
       "value": "none",
-      "options": ["none", "http", "socks5"]
+      "options": [
+        { "label": "None", "value": "none" },
+        { "label": "HTTP", "value": "http" },
+        { "label": "SOCKS5", "value": "socks5" }
+      ]
     },
     {
       "name": "proxyHost",
