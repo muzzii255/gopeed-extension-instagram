@@ -11,7 +11,7 @@ https://www.instagram.com/reels/ABC123xyz/
 https://instagram.com/reels/ABC123xyz/
 ```
 
-other endpoints like `/p/` (posts) or `/tv/` (igtv) are not supported yet, stupid instagram not failing on my browser.
+other endpoints like `/p/` (posts) or `/tv/` (igtv) are not supported yet, stupid instagram failing on my browser.
 
 ## installation
 
