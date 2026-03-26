@@ -31,7 +31,5 @@ for (let i = 0; i < mediaItems.length; i++) {
       });
     }
   }
-  
 }
-
 console.log(files);
