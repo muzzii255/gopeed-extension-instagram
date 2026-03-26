@@ -22,19 +22,12 @@ gopeed.events.onResolve(async (ctx) => {
       if (bestVideo) {
         files.push({
           name: `${username}_${shortcode}${suffix}.mp4`,
-          url: bestVideo.url,
+          req: {
+            url: bestVideo.url,
+          },
         });
       }
     }
-    // else if (item.images && item.images.length > 0) {
-    //   const bestImage = parser.getBestImage(item.images);
-    //   if (bestImage) {
-    //     files.push({
-    //       name: `${username}_${shortcode}${suffix}.jpg`,
-    //       url: bestImage.url,
-    //     });
-    //   }
-    // }
   }
 
   if (files.length === 0) {
