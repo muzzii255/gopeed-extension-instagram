@@ -4,7 +4,7 @@
   "title": "Instagram Downloader",
   "description": "Download Instagram reels.",
   "icon": "./icons/instagram.png",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "homepage": "https://github.com/muzzii255/gopeed-extension-instagram",
   "repository": {
     "url": "https://github.com/muzzii255/gopeed-extension-instagram"
