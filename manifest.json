@@ -1,0 +1,59 @@
+{
+  "name": "gopeed-extension-instagram",
+  "author": "muzzii255",
+  "title": "Instagram Downloader",
+  "description": "Download Instagram reels.",
+  "icon": "./icons/instagram.png",
+  "version": "1.0.0",
+  "homepage": "https://github.com/muzzii255/gopeed-extension-instagram",
+  "repository": {
+    "url": "https://github.com/muzzii255/gopeed-extension-instagram"
+  },
+  "scripts": [
+    {
+      "event": "onResolve",
+      "match": {
+        "urls": ["*://instagram.com/reels/*", "*://www.instagram.com/reels/*"]
+      },
+      "entry": "dist/index.js"
+    }
+  ],
+  "settings": [
+    {
+      "name": "proxyType",
+      "title": "Proxy Type",
+      "description": "Select proxy protocol (none, http, or socks5)",
+      "type": "string",
+      "value": "none",
+      "options": ["none", "http", "socks5"]
+    },
+    {
+      "name": "proxyHost",
+      "title": "Proxy Host",
+      "description": "Proxy server hostname or IP address",
+      "type": "string",
+      "value": ""
+    },
+    {
+      "name": "proxyPort",
+      "title": "Proxy Port",
+      "description": "Proxy server port number",
+      "type": "string",
+      "value": ""
+    },
+    {
+      "name": "proxyUsername",
+      "title": "Proxy Username",
+      "description": "Username for proxy authentication (optional)",
+      "type": "string",
+      "value": ""
+    },
+    {
+      "name": "proxyPassword",
+      "title": "Proxy Password",
+      "description": "Password for proxy authentication (optional)",
+      "type": "string",
+      "value": ""
+    }
+  ]
+}
